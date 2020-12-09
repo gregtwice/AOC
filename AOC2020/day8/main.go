@@ -4,10 +4,11 @@ import (
 	"AOC/helper"
 	"fmt"
 	"strings"
+	"time"
 )
 
 func main() {
-
+	start := time.Now()
 	lines := helper.StringArrayFromFile("./AOC2020/day8/sample.txt")
 	//lines := helper.StringArrayFromFile("./AOC2020/day8/exemple.txt")
 
@@ -23,6 +24,8 @@ func main() {
 		tryRun(lines)
 		lines[i] = orig
 	}
+	elapsed := time.Since(start)
+	fmt.Println("took : ",elapsed)
 
 }
 
