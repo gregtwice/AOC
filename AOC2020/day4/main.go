@@ -1,7 +1,7 @@
 package main
 
 import (
-	"AOC2016/helper"
+	"AOC/helper"
 	"bufio"
 	"fmt"
 	"os"
